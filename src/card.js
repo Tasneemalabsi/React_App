@@ -26,15 +26,6 @@ function saveToLocalStorage(){
     localStorage.setItem("products",JSON.stringify(arr))
   }
 }
-
-function handleDelete (){
-  let arr = JSON.parse(localStorage.getItem("products"));
-
-  if (arr && arr.length > props.index) {
-    arr.splice(props.index, 1); 
-    localStorage.setItem("products", JSON.stringify(arr));
-  }
-}
   
     return(
       <>
