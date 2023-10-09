@@ -10,6 +10,7 @@ function App() {
   return (
       <>
         <Header />
+        hello
         <Router>
         <Routes>
           <Route path="/" Component={Main}></Route>

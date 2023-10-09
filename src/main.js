@@ -19,10 +19,30 @@ function Main (){
         setItems(filteredData)
     }
 
+//       async function getClothesData (){
+//       const url = 'https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/products/list?country=us&lang=en&currentpage=0&pagesize=30&categories=men_all&concepts=H%26M%20MAN';
+//   const options = {
+// 	method: 'GET',
+//     headers: {
+//       'X-RapidAPI-Key': '830cb32404msh080a8e7962b8035p140cd4jsned40d02d718a',
+//       'X-RapidAPI-Host': 'apidojo-hm-hennes-mauritz-v1.p.rapidapi.com'
+// 	}
+// };
+
+//   const response = await fetch(url, options);
+//   const result = await response.json();
+//   console.log(response, result)
+// 	// setItems(result.results)
+//     localStorage.setItem("items",JSON.stringify(result.results))
+// }
+
+// useEffect(function(){getClothesData()},[])
+
 
 
     return(
         <>
+        {/* <button onClick={getClothesData}>save</button> */}
           <Form className="d-flex" onSubmit={handleSubmit} style={{marginTop:"3%", marginLeft:"20%", marginRight:"20%"}}>
             <Form.Control
               type="search"
